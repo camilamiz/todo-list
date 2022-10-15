@@ -1,0 +1,57 @@
+.scoreBoard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.createdTasks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.createdTasksText {
+  color: var(--blue-400);
+  font-weight: 700;
+  font-size: 1rem;;
+}
+
+.createdTasksScore {
+  width: 24px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  color: var(--gray-100);
+  background-color: var(--gray-400);
+  border-radius: 10px;
+  padding: 2px 8px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.finishedTasks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.finishedTasksText {
+  color: var(--purple-500);
+  font-weight: 700;
+  font-size: 1rem;;
+}
+
+.finishedTasksScore {
+  width: 52px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  border-radius: 10px;
+  padding: 2px 8px;
+  font-weight: 700;
+  font-size: 12px;
+}
