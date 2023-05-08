@@ -1,6 +1,7 @@
 .card {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 72px;
   margin-bottom: 12px;
   background-color: var(--gray-500);
@@ -9,8 +10,27 @@
   vertical-align: top;
 }
 
-.card input {
+.checkbox {
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
   background-color: transparent;
+  border: 1px solid var(--blue-400);
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]:checked {
+  background-color: var(--purple-700);
+  border: none;
+  color: var(--gray-100);
 }
 
 .description {
