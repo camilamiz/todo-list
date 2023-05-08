@@ -11,24 +11,6 @@
   border-radius: 0.5rem;
 }
 
-.checkbox input[type="checkbox"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 1px solid var(--blue-400);
-  cursor: pointer;
-}
-
-.checkbox input[type="checkbox"]:checked {
-  background-color: var(--purple-700);
-  border: none;
-  color: var(--gray-100);
-}
-
 .title {
   font-size: 14px;
   line-height: 19.6px;

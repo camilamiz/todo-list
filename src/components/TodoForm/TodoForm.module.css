@@ -33,4 +33,10 @@
   height: 52px;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todoForm button:hover {
+  background-color: var(--blue-400);
 }
