@@ -2,6 +2,11 @@ import styles from './TodoForm.module.css'
 
 import { AiOutlinePlusCircle } from 'react-icons/ai'
 
+const handleOnClick = event => {
+  console.log('hellooo!!!!!!')
+  event.preventDefault();
+}
+
 export function TodoForm () {
   return (
   <form className={styles.todoForm} action="">
@@ -9,7 +14,9 @@ export function TodoForm () {
       type="text"
       placeholder="Adicione uma nova tarefa"
     />
-    <button>Criar <AiOutlinePlusCircle /></button>
+    <button onClick={handleOnClick}>
+      Criar <AiOutlinePlusCircle />
+    </button>
   </form>
   );
 }
