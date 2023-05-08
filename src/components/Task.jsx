@@ -3,6 +3,7 @@ import { Checkbox } from '@mui/material'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import RadioButtonUncheckedOutlinedIcon from '@mui/icons-material/RadioButtonUncheckedOutlined';
 import styles from './Task.module.css'
+import { IconContext } from 'react-icons';
 
 export function Task () {
   return (
@@ -18,12 +19,13 @@ export function Task () {
             }
           }}
         />
-        <div className={styles.checkbox}>
-        </div>
         <div className={styles.description}>
-          Integer urna interdum massa libero auctor massa libero auctor massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.
+          Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.        </div>
+        <div>
+          <IconContext.Provider value={{ size: '1rem' }}>
+            < HiOutlineTrash />
+          </IconContext.Provider>
         </div>
-        < HiOutlineTrash />
       </div>
     </>
   )
