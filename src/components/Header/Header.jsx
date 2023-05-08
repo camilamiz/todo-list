@@ -1,6 +1,6 @@
 import styles from './Header.module.css'
 
-import todoLogo from '../assets/todoLogo.svg'
+import todoLogo from '../../assets/todoLogo.svg'
 
 export function Header () {
   return (

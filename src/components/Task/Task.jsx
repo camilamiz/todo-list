@@ -5,11 +5,12 @@ import RadioButtonUncheckedOutlinedIcon from '@mui/icons-material/RadioButtonUnc
 import styles from './Task.module.css'
 import { IconContext } from 'react-icons';
 
-export function Task () {
+export function Task ({ task }) {
   return (
     <>
       <div className={styles.card}>
         <Checkbox
+        checked={task.isComplete}
         icon={<RadioButtonUncheckedOutlinedIcon />}
         checkedIcon={<CheckCircleIcon />}
           sx={{
@@ -19,8 +20,9 @@ export function Task () {
             }
           }}
         />
-        <div className={styles.description}>
-          Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.        </div>
+        <div className={styles.title}>
+          {task.title}
+        </div>
         <div>
           <IconContext.Provider value={{ size: '1rem' }}>
             < HiOutlineTrash />

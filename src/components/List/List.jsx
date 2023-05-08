@@ -1,15 +1,14 @@
-import { Task } from '../Task'
+import { Task } from '../Task/Task'
 
 import styles from './List.module.css'
 
-export function List() {
+export function List({ tasks }) {
   return(
     <>
       <div className={styles.list}>
-        <Task />
-        <Task />
-        <Task />
-        <Task />
+        {tasks.map(task => {
+          return <Task task={task} />
+        })}
       </div>
     </>
   )
