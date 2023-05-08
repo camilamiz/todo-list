@@ -1,4 +1,4 @@
-import { Task } from './Task'
+import { Task } from '../Task'
 
 import styles from './List.module.css'
 

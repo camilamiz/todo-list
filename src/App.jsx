@@ -1,5 +1,5 @@
-import { Header } from "./components/Header";
-import { List } from "./components/List";
+import { Header } from "./components/Header/Header";
+import { List } from "./components/List/List";
 import { TaskScoreBoard } from "./components/TaskScoreBoard";
 import { TodoForm } from "./components/TodoForm";
 
